@@ -1,0 +1,1536 @@
+
+
+:root{
+    --primary: linear-gradient(
+        45deg,
+        rgb(16, 198, 16),
+        rgb(19, 100, 19)
+    );
+
+    --text-main: rgb(50, 49, 54);
+    
+
+
+    --primary-text-size: 15px;
+    --primary-text-line-height: 1.5rem;
+    --header-text-size: 1.8rem;
+
+    --main-font: "Inter", sans-serif;
+    --headers-font: "Dosis", sans-serif;
+    --brands: navy;
+
+
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.bg-2{
+    background-color: rgb(250, 250, 250);
+}
+
+
+.stars{
+    color: rgb(255, 206, 73);
+    background-color: rgba(0, 0, 0, 0.158);
+    box-shadow: 0 0 5px 5px rgba(50, 50, 50, 0.095);
+}
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    list-style: none;
+    
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--brands)
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    color: var(--text-main);
+    font-weight: 200;
+}
+
+
+header{
+    width: 100%;
+
+}
+.navbar{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1{
+    font-size: 2rem;
+    font-family: "Dosis", sans-serif;
+    
+
+    background: -webkit-linear-gradient(
+        45deg,
+        #239daa,
+        #2cb514
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar h1::after{
+    content: "T-Solar";
+}
+
+
+
+
+section{
+    width: 100%;
+    padding: 4rem 0;
+
+}
+
+.hero{
+    
+    background-image: url("images/hero-solar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(8px);
+   
+    position: relative;
+
+}
+
+section p{
+    line-height: var(--primary-text-line-height);
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.hero .container{
+    z-index: 2;
+}
+.bg-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.114) 25%,
+        rgba(0, 0, 0, 0) 100%
+    );
+
+}
+
+
+.hero-main-content{
+    width: 100%;
+   
+    backdrop-filter: blur(3px);
+
+}
+
+.hero-header{
+    width: 80%;
+    line-height: 2.5rem;
+    font-size: var(--header-text-size);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-family: var(--headers-font);
+    color: white;
+
+    text-shadow: 2px 2px 5px #0f0f0f81;
+}
+
+.section-header{
+    width: 80%;
+    line-height: 2.5rem;
+    font-size: var(--header-text-size);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-family: var(--headers-font);
+
+
+    background: -webkit-linear-gradient(
+            45deg,
+            #239daa,
+            #2cb514
+        );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.section-header-light{
+    color: white;
+}
+
+.hero-main-text p{
+    margin-bottom: 0.5rem;
+}
+
+
+.side-bar{
+    width: 100%;
+    height: 100%;
+    background-color: white ;
+    border-radius: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: fixed;
+    right: 0;
+    top: 5rem;
+    box-shadow: 4px 4px 2rem 5px rgba(152, 150, 150, 0.585);
+    padding-top: 1rem;
+    z-index: 200;
+}
+.fixed{
+    position: fixed;
+    z-index: 200;
+    background-color: white;
+}
+.noside-bar{
+    display: flex;
+}
+.menu{
+    display: flex;
+    gap:8px;
+    align-items: center;
+    font-size:1rem;
+    font-weight: 500;
+    height: 2rem;
+    width: 90%;
+    margin: 0 auto;
+ 
+}
+
+
+
+.media-icons{
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.media-icons-cover{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 5rem;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.media-icons-cover img{
+    width: 1.2rem;
+    
+}
+
+.hero-stat-div{
+    margin: 1rem auto;
+    margin-top: 2.5rem;
+    border: 1px solid rgb(255, 255, 255);
+    width: 85%;
+    /* background: linear-gradient(
+        rgb(8, 87, 8),
+        green
+    ); */
+    background-color: #0b4c5321;
+    color: white;
+    min-height: 20rem;
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    border-radius: 2rem;
+    overflow: hidden;
+
+}
+
+.cardrow{
+    width: 100%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    gap: 1rem;
+}
+.cardrowb{
+    width: 100%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    gap: 1rem;
+}
+.cardrowc{
+    width: 100%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    gap: 1rem;
+}
+.left{
+    font-size: 2.5rem;
+}
+
+.cardrow-parted{
+    width: 100%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    height: 5rem;
+
+    display: flex;
+}
+.parted-a, .parted-b{
+    width: 50%;
+    height: 100%;
+
+}
+.parted-a{
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+.cardrow-cta{
+    width: 100%;
+    height: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cardrow-cta button{
+    padding: 1rem;
+    border-radius: 4rem;
+    font-size: 1rem;
+    background-color: var(--brands);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+
+
+
+.points-div{
+    margin: 1.5rem auto;
+    width: 100%;
+    padding-top: 2rem;
+}
+.point-text{
+    width: 90%;
+    margin: 0 auto;
+}
+.ml{
+    margin-left: 5%;
+}
+.point-icon{
+  margin-bottom: 0.5rem;
+}
+.point-icon img{
+    width: 2rem;
+}
+
+.solar-sun-icon img{
+    width: 3.5rem;
+}
+
+.subheader{
+    margin-bottom: 1rem;
+    font-weight: 500;
+
+    background: -webkit-linear-gradient(
+        45deg,
+        #239daa,
+        #2cb514
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#about .container{
+    width: 100% ;
+
+    
+}
+
+.about-images-div{
+    width: 90%;
+    min-height: 20rem;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about-image-card{
+    width: 100%;
+    height: 24rem;
+    box-shadow: 0 5px 8px 2px rgba(128, 128, 128, 0.216);
+    border-radius: 2rem;
+    flex: 0 0 auto;
+    background-color: white;
+
+    z-index: 5;
+}
+
+.blank-white-card-a {
+    width: 98%;
+    margin: 0 auto;
+    height: 24rem;
+    box-shadow: 0 5px 8px 2px rgba(128, 128, 128, 0.216);
+    border-radius: 2rem;
+    flex: 0 0 auto;
+
+    z-index: 4;
+    margin-top: -23.5rem;
+    background-color: white;
+}
+
+.blank-white-card-b {
+    width: 95%;
+    margin: 0 auto;
+    height: 24rem;
+    box-shadow: 0 5px 8px 2px rgba(128, 128, 128, 0.216);
+    border-radius: 2rem;
+    flex: 0 0 auto;
+
+    z-index: 3;
+    margin-top: -23.5rem;
+    background-color: white;
+}
+
+
+
+.about-image-card .image-wrap{
+    width: 100%;
+    height: 18rem;
+    border-radius: 2rem 2rem 0 0;
+    
+
+   
+}
+
+.img-bg-a{
+    background-image: url("images/panel-rooftop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-bg-b{
+    background-image: url("images/solar-pool.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-bg-c{
+    background-image: url("images/strategic-mill.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.about-card-body{
+    width: 95%;
+    margin: 0 auto;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.about-card-body .pop{
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    border-radius: 1rem;
+    bottom: 2rem;
+    right: -0.8rem;
+    background-color: white;
+    box-shadow: 1px 1px 5px 2px rgba(128, 128, 128, 0.312);
+}
+
+.about-card-body .icon-cover {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-card-body .icon-cover img{
+    width: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* CAROUSEL SLIDERS STYLES */
+
+
+  .carousel-div{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-height: 350px;
+    height: 350px;
+    border: 1px solid var(--border-white);
+    margin: 2rem auto;
+    
+  }
+
+  .carousel-slide{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    max-height: 350px;
+    height: 100%;
+    border-radius: 2rem;
+  }
+
+
+  /* zoom effect to different image */
+  .mobile-zoom{
+    transform: scale(1.4);
+    margin-bottom: -2rem;
+  }
+
+  .sliders{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease, transform 1s ease;
+
+  }
+
+  .slider-a{
+    background-image: url("images/panel-roof-top.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .slider-b{
+    background-image: url("images/strategic-mill.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .slider-c{
+    background-image: url("images/engineer-panel.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+  /* Slider in animations */
+
+.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-out-right {
+  transform: translateX(100%);
+}
+
+.slide-out-left {
+  transform: translateX(-100%);
+}
+
+
+
+/* Caption text */
+
+.caption-texts {
+
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  
+  width: 100%;
+  height: 10rem;
+  top: 13rem;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  background: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.372),
+    rgba(0, 0, 0, 0.543)
+  );
+
+}
+
+
+.caption-texts h4{
+  color: white;
+  font-weight: 600;
+}
+
+.caption-texts p{
+  color: white;
+  font-weight: 400;
+}
+
+
+
+
+/* The bullets indicators */
+
+.dots{
+  position: absolute;
+  
+  bottom: 0.5rem;
+  
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  z-index: 99;
+
+}
+.dot {
+  height: 3px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 1rem;
+  display: inline-block;
+  
+}
+
+.active {
+  background-color: #ffffff;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.633);
+  margin-top: -22px;
+  color: rgb(90, 87, 87);
+  
+  font-weight: bold;
+  font-size: 10px;
+  
+  border-radius: 4rem;
+  user-select: none;
+}
+
+.next {
+  right: 1rem;
+  
+}
+
+.prev {
+  left: 1rem;
+ 
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+  .example, .car-img {
+    width: 100%;
+  }
+
+  .zoomed{
+    transform: scale(1.4);
+  }
+
+
+  /* CAROUSEL STYLES END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* DARK SLIDER SECTION */
+
+.dark-sliders{
+    background-color: rgb(4, 4, 20);
+}
+
+.slider-div{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    overflow: auto;
+    
+}
+
+.slider-div::-webkit-scrollbar{
+    display: none;
+}
+
+.slider{
+    width: 60%;
+    min-height: 15rem;
+    margin: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+   
+    
+}
+
+.products-slider{
+    width: 90%;
+    min-height: 15rem;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+   
+    
+}
+
+.slider-div-slider-2{
+    width: 60%;
+    min-height: 15rem;
+    margin: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+}
+
+.slider-card{
+    width: 100%;
+    height: 18.5rem;
+    box-shadow: 0 2px 4px 2px rgba(128, 128, 128, 0.177);
+    border-radius: 2rem;
+    flex: 0 0 auto;
+    background-color: white;
+
+    z-index: 5;
+}
+
+.blank-slider-card-a {
+    width: 98%;
+    margin: 0 auto;
+    height: 17rem;
+    box-shadow: 0 2px 4px 2px rgba(128, 128, 128, 0.074);
+    border-radius: 2rem;
+    flex: 0 0 auto;
+
+    z-index: 4;
+    margin-top: -16.5rem;
+    background-color: white;
+}
+
+.blank-slider-card-b {
+    width: 95%;
+    margin: 0 auto;
+    height: 17rem;
+    box-shadow: 0 5px 8px 2px rgba(128, 128, 128, 0.048);
+    border-radius: 2rem;
+    flex: 0 0 auto;
+
+    z-index: 3;
+    margin-top: -16.5rem;
+    background-color: white;
+}
+
+
+
+.slider-card .image-wrap{
+    width: 100%;
+    height: 15rem;
+    border-radius: 2rem 2rem 0 0;
+    
+
+   
+}
+
+.slider-img-a{
+    background-image: url("images/consl.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slider-img-b{
+    background-image: url("images/t1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slider-img-c{
+    background-image: url("images/s4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slider-img-d{
+    background-image: url("images/store.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ...products carosel */
+
+
+
+.product-img-a{
+    background-image: url("images/panel.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+
+
+.product-img-b{
+    background-image: url("images/Inverter_Battery_220AH-12V_-_TT_Luminous__07955.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+
+
+
+.product-img-c{
+    background-image: url("images/mppt.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+
+
+.product-img-d{
+    background-image: url("images/smarten-inv.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.product-img-e{
+    background-image: url("images/stand1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.product-img-f{
+    background-image: url("images/cable1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+/* ..products-slider ends */
+
+
+/* ...solar-panel slider */
+
+
+
+.solar-panel-img-a{
+    background-image: url("images/panel2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+
+
+.solar-panel-img-b{
+    background-image: url("images/panel1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+
+
+
+.solar-panel-img-c{
+    background-image: url("images/panel3.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+
+
+.solar-panel-img-d{
+    background-image: url("images/panel4.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.solar-panel-img-e{
+    background-image: url("images/panel3b.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.solar-panel-img-f{
+    background-image: url("images/panel4b.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+/* solar-panel slider ends */
+
+
+
+/* ...battery slider */
+
+
+
+.battery-img-a{
+    background-image: url("images/tub1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+
+
+.battery-img-b{
+    background-image: url("images/inverter5.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+
+
+
+.battery-img-c{
+    background-image: url("images/dry1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+
+
+.battery-img-d{
+    background-image: url("images/inverter10.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.battery-img-e{
+    background-image: url("images/Inverter_Battery_220AH-12V_-_TT_Luminous__07955.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.battery-img-f{
+    background-image: url("images/inverter11.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+/* battery slider ends */
+
+
+/* ...solar charge controller slider starts.. */
+
+
+
+.controller-img-a{
+    background-image: url("images/pwm1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+
+
+.controller-img-b{
+    background-image: url("images/mppt1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+
+
+
+.controller-img-c{
+    background-image: url("images/pwm2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+
+
+.controller-img-d{
+    background-image: url("images/mppt2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.controller-img-e{
+    background-image: url("images/pwm3.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.controller-img-f{
+    background-image: url("images/mppt2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+/*solar charge controller ends */
+
+
+
+
+.slider-card-body{
+    width: 95%;
+    margin: 0 auto;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.about-card-body .pop{
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    border-radius: 1rem;
+    bottom: 2rem;
+    right: -0.8rem;
+    background-color: white;
+    box-shadow: 1px 1px 5px 2px rgba(128, 128, 128, 0.312);
+}
+
+.about-card-body .icon-cover {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-card-body .icon-cover img{
+    width: 3rem;
+}
+
+
+/*........ tee-solar....... */
+
+.head-name{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.teesolar{
+    padding:5px 8px ;
+    font-weight: bold;
+    border-radius: 2rem;
+    background: linear-gradient(
+            45deg,
+            #239daa,
+            #2cb514
+    );
+    font-size: 12px;
+    color: white;
+}
+
+
+/* -----dark slider end */
+
+
+.work-card{
+    width: 100%;
+    height: 15rem; 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    box-shadow: 0 4px 6px 4px rgb(205, 194, 194);
+}
+
+.work-card-image{
+    width: 95%;
+    height: 10rem; 
+    background-color: gold;
+    margin: auto;
+    margin-top:6px;
+    border-radius: 2rem 2rem 0rem 0rem ;
+    background-image: url(images/1960-solar-charge-controller-4-stage-lithium-battery-regulator-original-imagt3t2gvytpgjj.jpeg);
+    background-size: cover;
+}
+
+.work-text{
+    margin:5px 1rem;
+}
+
+.work-card-btn{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 10rem;
+    background-color: lavender;
+    margin:0.5rem 1rem;
+    text-align: center;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-carousel{
+    width: 100%;
+    height: 15rem;
+    background-color: transparent;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    justify-content: space-between;
+}
+::-webkit-scrollbar{
+    outline: none;
+}
+
+.work-carousel-item{
+    width: 8rem;
+    height: 8rem;
+    background-color: blue;
+    border-radius: 1rem;
+    margin: 0 1rem;
+    flex: 0 0 auto;
+}
+.item1{
+    background-image:url(images/solar4.jpg);
+    background-size: cover;
+}
+
+.item2{
+    background-image:url(images/solar5.jpg);
+    background-size: cover;
+}
+
+.item3{
+    background-image:url(images/solar7.jpg);
+    background-size: cover;
+}
+
+
+
+/* AYs styles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .more-box{
+    border: 4px solid  rgba(0, 10, 25, 0.305);
+    border-radius: 2rem;
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+  }
+
+  .more-box p{
+    width: 80%;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+  footer{
+    width: 100%;
+    padding: 4rem 0;
+    background-color: rgb(0, 10, 25);
+    text-align: center;
+    color: whitesmoke
+  }
+
+  
+
+
+  .footer-contents-cover{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+  }
+
+
+
+  .footer-media{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-media-item{
+    display: flex;
+    gap: 1rem;
+    align-items:  center;
+    justify-content: center;
+    margin: 1rem auto;
+    width: 2rem;
+
+
+  }
+
+  .footer-media-item .media-name{
+    display: none;
+  }
+
+
+  .footer-texts{
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-texts p{
+    font-size: 12px;
+    width: 80%;
+    margin: 1rem auto;
+    color: rgb(207, 229, 229);
+  }
+
+  
+
+.hide{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+  /* ...desktop view.... */
+
+
+
+
+  @media only screen and (min-width:478px){
+
+
+    .navbar h1::after{
+        content: "Teenergy Solar Solutions";
+    }
+    section{
+        padding: 6rem 0;
+    }
+
+    .navright{
+        display: none;
+    }
+
+
+
+    .hero-header{
+        width: 50%;
+        font-size: 3rem;
+        color: white;
+        line-height: 4rem;
+        margin: 1rem 0 ;
+
+        
+    }
+
+    .hero-stat-div{
+        display: flex;
+        flex-direction:row;
+        min-height: 5rem;
+        border-radius: 5px;
+        width: 95%;
+        margin-top: 8rem;
+    }
+
+    .cardrow,.cardrowb,.cardrowc,.cardrow-cta,.cardrow-parted{
+        width: 20%;
+        border-bottom: none;
+        font-size: 14px;
+        
+        border-right:1px solid rgb(255, 255, 255) ;
+    }
+    .cardrow-cta{
+        border-right: 0;
+    
+    }
+
+    .side-bar{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        border-radius: 0;
+        height: 5rem;
+        box-shadow: 0 0 0 0;
+        position: relative;
+        align-items: center;
+      
+    
+        justify-content: flex-end;
+        padding: 0;
+       
+        gap: 5px;
+      
+        top: 0; 
+        right: 0;
+        
+    }
+
+    .side-bar .menu{
+        justify-content: flex-start;
+        gap: 5px;
+        width: 8.5rem;
+        margin: 0;
+       
+        border-bottom: 2px solid transparent;
+        
+       
+    }
+    .side-bar .menu .side-text{
+        border-bottom: 2px solid transparent;
+        height: 1.5rem;
+        transition: all 0.5s ease-in-out ;
+    }
+    .side-bar .menu .side-text:hover{
+        border-bottom: 2px solid greenyellow;
+    }
+    .points-div{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        height: 35rem;
+    }
+
+    .subhero-divs{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        height: 30rem;
+        flex-direction: row-reverse;
+        
+    }
+
+    .ml{
+        margin-left: 5%;
+    }
+    .subhero-divs-text{
+        max-width: 425px;
+        
+    }
+
+    #about .container{
+        width: 100% ;
+
+        
+    }
+    
+    .about-images-div{
+        max-width: 400px;
+        margin: 0;
+    }
+
+    .point-text{
+        max-width: 478px;
+        
+        height: 50%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .carousel-div{
+        max-width: 400px;
+        margin: 0;
+    }
+
+
+
+
+
+
+    .slider{
+        max-width: 250px;
+        margin: 3rem 1rem;
+        height: 20rem;
+    }
+
+
+
+
+
+
+    .work-card{
+        max-width: 400px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    footer{
+        padding: 6rem 0;
+    }
+    .footer-media{
+        gap: 8px;
+    }
+
+    .footer-media-item {
+        width: 8rem;
+        gap: 5px;
+        
+        justify-content: flex-start;
+    }
+    .footer-media-item .media-name{
+        display: flex;
+        opacity: 1;
+        color: white;
+    }
+
+
+
+
+
+
+  }
