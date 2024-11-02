@@ -1366,7 +1366,7 @@ section p{
         min-height: 5rem;
         border-radius: 5px;
         width: 95%;
-        margin-top: 8rem;
+        margin-top: 6rem;
     }
 
     .cardrow,.cardrowb,.cardrowc,.cardrow-cta,.cardrow-parted{
@@ -1425,6 +1425,7 @@ section p{
         align-items: center;
         justify-content:space-around;
         height: 35rem;
+        margin: 0 auto;
     }
 
     .subhero-divs{
@@ -1453,12 +1454,12 @@ section p{
     
     .about-images-div{
         max-width: 400px;
-        margin: 0;
+        margin: 0 auto;
     }
 
     .point-text{
-        max-width: 478px;
-        
+        max-width: 400px;
+        width: 50%;
         height: 50%;
     }
 
